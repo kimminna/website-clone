@@ -1,0 +1,502 @@
+header{
+  position: relative;
+  height: 100vh;
+  background: url(images/main_visual.jpg) center;
+}
+
+header .header-top{
+  position: relative;
+  height: 96px;
+}
+
+header .header-top .area-logo{
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header .header-top .area-logo .logo{
+  display: block;
+  width: 246px;
+  height: 29px;
+  font-size: 0;
+  line-height: 0;
+  background: url(https://cdn.hankook-precisionworks.com/static/assets/img/ko/pc/common/img_logo_w.png);
+}
+
+header .header-nav{
+  text-align: right;
+  color: #fff;
+  padding: 0 180px 0 0 ;
+  font-size: 18px;
+}
+
+header .header-nav ul li{
+  display: inline-block;
+  text-align: center;
+  margin-right: 25px;
+}
+header .header-nav ul li:last-child{
+  margin-right: 0;
+}
+
+header .header-nav ul li a{
+  display: block;
+  height: 96px;
+  line-height: 96px;
+  padding: 0 15px;
+}
+header .header-nav ul li a:after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color:#fff ;
+  margin: -33px auto 0;
+  transition: width .5s ease;
+}
+header .header-nav ul li a:hover:after{
+  width:100%;
+}
+
+header .header-nav .nav-motion{
+  position: absolute;
+  display: block;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 96px;
+  height: 33px;
+  background: url(https://cdn.hankook-precisionworks.com/static/assets/img/ko/pc/common/ico_innovation_main_w.png); font-size: 0;
+}
+
+header .header-txt{
+  position: absolute;
+  left: 380px;
+  bottom: 230px;
+  font-size: 80px;
+  color:#fff;
+}
+
+header .header-iconScroll{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+  width: 22px;
+  height: 32px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 20px;
+}
+header .header-iconScroll:before{
+  content: '';
+  width: 2px;
+  height: 6px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: mouseWheel 1.5s infinite ease-in;
+}
+
+
+/* main */
+
+/* section-01 */
+#section-01{
+  padding: 180px 0 200px 0;
+}
+#section-01 .container{
+  width: 1380px;
+  margin: 0 auto;
+}
+#section-01 .cont-wrap{
+  position: relative;
+  height: 500px;
+  margin-top: 180px;
+}
+#section-01 .cont-wrap img{
+  opacity: 0;
+}
+#section-01 .cont-wrap:first-child{
+  margin-top: 0;
+}
+#section-01 .cont-wrap:nth-child(2n-1) img{
+  position: absolute;
+  left: -40px;
+}
+#section-01 .cont-wrap:nth-child(2n) img{
+  position: absolute;
+  right: -40px;
+}
+#section-01 .cont-wrap:nth-child(2n-1) img.animate{
+  transform: translateX(50px);
+}
+#section-01 .cont-wrap:nth-child(2n) img.animate{
+  transform: translateX(-50px);
+}
+#section-01 .cont-wrap .cont-text{
+  position: absolute;
+  display: inline-block;
+}
+#section-01 .cont-wrap:nth-child(2n-1) .cont-text{
+  left: 900px;
+}
+#section-01 .cont-wrap:nth-child(2n) .cont-text{
+  left: 100px;
+}
+
+#section-01 .cont-wrap .cont-text .cont-title{
+  font-size: 60px;
+  display: block;
+  line-height: 1;
+}
+
+#section-01 .cont-wrap .cont-text .cont-subtxt{
+  display: block;
+  margin-top: 75px;
+  font-size: 32px;
+  line-height: 1.4;
+}
+
+#section-01 .cont-wrap .cont-text .cont-ex{
+  margin-top: 32px;
+  line-height: 1.9;
+}
+
+/* section-01 */
+
+/* section-02 */
+
+#section-02{
+  position: relative;
+  height: 700px;
+  background: url(https://cdn.hankook-precisionworks.com/static/assets/img/ko/pc/main/bg_maincont02.jpg) 50% 0; background-size: cover;
+}
+
+#section-02 .cont-text{
+  position: absolute;
+  left: 1000px;
+  top: 130px;
+  color: #fff;
+}
+
+#section-02 .cont-text .cont-title{
+  display: block;
+  font-size: 60px;
+}
+
+#section-02 .cont-text .cont-subtxt{
+  display: block;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+#section-02 .cont-text .cont-ex{
+  margin-top: 25px;
+  line-height: 1.9;
+}
+
+#section-02 .cont-text .learn-more{
+  border-color: #fff; 
+  /* learn more 색상 하양으로 변경 */
+}
+
+/* section-02 */
+
+/* section-03 */
+
+#section-03 {
+  position: relative;
+  height: 730px;
+  background: url(https://cdn.hankook-precisionworks.com/static/assets/img/ko/pc/main/bg_main_vision.jpg) 50% 50%; background-size: cover; background-attachment: fixed;
+}
+#section-03 .cont-text{
+  position: absolute;
+  left: 400px;
+  top: 300px;
+}
+#section-03 .cont-title{
+  display: block;
+  font-size: 18px;
+  color: #f37938;
+}
+#section-03 .cont-subtxt{
+  display: block;
+  margin-top: 30px;
+  font-size: 60px;
+  color: #fff;
+}
+
+/* section-03 */
+
+/* section-04 */
+
+#section-04 .container{
+  width: 1180px;
+  padding: 80px 0 140px 0;
+  margin: 0 auto;
+}
+#section-04 .container .section-header{
+  position: relative;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#section-04 .container .section-header strong{
+  position: absolute;
+  display: block;
+  width: 302px;
+  height: 30px;
+  text-indent: -99999px;
+  background: url(https://cdn.hankook-precisionworks.com/static/assets/img/ko/pc/main/tit_tim.png);
+}
+#section-04 .container .section-header .learn-more{
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  margin: 0;
+  width: 150px;
+  height: 48px;
+  border-bottom: 0;
+  cursor: pointer;
+}
+#section-04 .container .section-header .learn-more a{
+  line-height: 48px;
+}
+#section-04 .container .section-header a:after{
+  content:'';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  background-image: url(https://cdn.hankook-technologygroup.com/static/assets/img/ko/pc/content/btn_arrow.png);
+}
+#section-04 .container .list{
+  position: relative;
+  height: 1120px;
+}
+#section-04 .container .list li{
+  position: relative;
+  overflow: hidden;
+}
+#section-04 .container .list li a{
+  display: block;
+}
+#section-04 .container .list li a img{
+  transition: .3s ease-out;
+}
+#section-04 .container .list li a:hover img{
+  transform: scale(1.1);
+}
+#section-04 .container .list .list-text{
+  position: absolute;
+  left: 30px;
+  bottom: 42px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+}
+
+#section-04 .container .list .type-01
+{
+  position: absolute;
+  left: 0;
+  top: 60px;
+  opacity: 0;
+}
+#section-04 .container .list .type-02{
+  position: absolute;
+  left: 400px;
+  top: 60px;
+  opacity: 0;
+}
+#section-04 .container .list .type-03{
+  position: absolute;
+  left: 800px;
+  top: 60px;
+  opacity: 0;
+}
+#section-04 .container .list .type-04{
+  position: absolute;
+  left: 0;
+  top: 710px;
+  opacity: 0;
+}
+#section-04 .container .list .type-05{
+  position: absolute;
+  left: 400px;
+  top: 570px;
+  opacity: 0;
+}
+#section-04 .container .list .type-06{
+  position: absolute;
+  left: 800px;
+  top: 710px;
+  opacity: 0;
+}
+#section-04 .container .list .type-01.animate{
+  transform: translateY(-60px);
+}
+#section-04 .container .list .type-02.animate{
+  transform: translateY(-60px);
+}
+#section-04 .container .list .type-03.animate{
+  transform: translateY(-60px);
+}
+#section-04 .container .list .type-04.animate{
+  transform: translateY(-60px);
+}
+#section-04 .container .list .type-05.animate{
+  transform: translateY(-60px);
+}
+#section-04 .container .list .type-06.animate{
+  transform: translateY(-60px);
+}
+/* section-04 */
+
+/* section-05 */
+#section-05 .container{
+  height: 220px;
+  background: url(https://cdn.hankook-precisionworks.com/static/assets/img/ko/pc/common/bg_etc.jpg) 50% 0;
+}
+#section-05 .container ul li{
+  float: left;
+  width: 33.33333333%;
+  height: 220px;
+  color: #fff;
+  text-align: center;
+  transition: all .3s ease-out;
+  border-left: 1px solid #efefef;
+}
+#section-05 .container ul li:first-child{
+  border: none;
+}
+#section-05 .container ul li:hover{
+  background-color: rgba(0,0,0,0.5);
+}
+#section-05 .container ul li a{
+  display: block;
+  line-height: 230px;
+  font-size: 24px;
+  font-weight: 500;
+}
+/* section-05 */
+
+/* footer */
+
+footer {background-color: #000;}
+footer .container {
+  width: 1200px; 
+  margin: 0 auto; 
+  padding: 50px 0 0 0; 
+  color: #fff; }
+footer .container .list-depth01 {margin-top: 40px;}
+footer .container .list-depth01 > li {float: left; width: 20%;}
+footer .container .list-depth01 em {font-size: 16px; margin-bottom: 20px;}
+footer .container .list-depth02 {margin-top: 20px;}
+footer .container .list-depth02 > li {opacity: .4; font-size: 14px; margin-top: 5px; line-height: 1.8;}
+footer .container .list-etc {
+  padding: 70px 0 30px; 
+  opacity: .4; 
+  overflow: hidden;}
+footer .container .list-etc li {
+  display: inline-block; 
+  font-size: 14px;}
+footer .container .list-etc li:first-child:after {
+  content: ''; 
+  display: inline-block; 
+  width: 1px; 
+  height: 11px; 
+  background-color: #fff; 
+  opacity: .4;
+  margin: 0 13px 0 16px;}
+footer .container .etc {
+  position: relative; 
+  height: 110px; 
+  border-top: 1px solid rgba(255,255,255,0.2)}
+footer .container .etc .copyright {position: absolute; 
+  left: 0; 
+  top: 40px; 
+  font-size: 14px; 
+  opacity: 0.4;}
+footer .container .etc .drop-down { 
+  
+  display: inline-block; 
+  position: absolute; 
+  right: 0;
+  top: 25px; 
+  min-width: 220px;}
+footer .container .etc .drop-down .drop-down-value {position: relative;}
+footer .container .etc .drop-down input[type="text"] {
+  width: 100%; 
+  font-size: 12px; 
+  color: #999; 
+  background-color: #000; 
+  border: 1px solid #4d4d4d; 
+  height: 36px; 
+  padding: 11px 16px; 
+  font-weight: 500;}
+footer .container .etc .drop-down .button-opener {
+  display: block; 
+  position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; border: 0; cursor: pointer; padding: 1px 6px; 
+  background-color: transparent;}
+footer .container .etc .drop-down .button-opener i {
+  float: right; 
+  position: relative; 
+  display: block; 
+  width: 18px; 
+  height: 9px; 
+  overflow: hidden;}
+footer .container .etc .drop-down .button-opener i:before {
+  content: ''; 
+  position: absolute; 
+  top: 50%; left: 50%; width: 8px; height: 8px; 
+  transform: translate(-50%, -50%) rotate(45deg); 
+  border-right: 2px solid #999; border-bottom: 2px solid #999; margin-top: -3px;}
+footer .container .etc .drop-down .button-opener i.open:before {
+  content: ''; 
+  position: absolute; top: 50%; left: 50%; width: 8px; height: 8px; transform: translate(-50%, -50%) rotate(225deg); 
+  border-right: 2px solid #999; border-bottom: 2px solid #999; margin-top: 3px;}
+footer .container .etc .drop-down .list-item {
+  display: none; 
+  position: absolute; 
+  bottom: 35px; left: 0; width: 100%; border: 1px solid #4d4d4d; background: #000; padding: 12px 0;}
+footer .container .etc .drop-down .list-item.open {display: block;}
+footer .container .etc .drop-down .list-item a {
+  display: block; width: 100%; padding: 10px 16px; border: 0; background: transparent; font-size: 12px; line-height: 1; text-align: left; cursor: pointer; color: #fff;}
+footer .container .etc .drop-down .list-item a:hover {
+  text-decoration: underline;}
+/* footer */
+
+
+.animate{
+  animation: fadeIn 1s forwards ease-in;
+  transition: 1.2s ease-in-out;
+}
+
+
+.learn-more{
+  display: inline-block;
+  margin-top: 32px;
+  font-size: 15px;
+  border-bottom: 1px solid #000;
+  font-weight: 500;
+}
+@keyframes mouseWheel {
+  0%{
+    top: 4px; opacity: 1;
+  }
+  100%{
+    top: 10px; opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 100;}
+}
